@@ -1,0 +1,567 @@
+*, *::aftr, *::before {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #777777; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* position: relative; */
+    font-size: 16px;
+    line-height: 1.6em;
+}
+#siteContainer {
+    min-height: 100%;
+    position: relative;
+}
+#siteHeader {
+    /* background: #ffff00;*/
+    /* padding: 10px; */
+}
+#siteBody {
+    padding: 10px;
+    padding-bottom: 60px; /* Height of the footer */
+    margin-top: 12vw;  /* 12vw 12% To avoid overlay with fixed header */
+}
+#siteFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;      /* Height of the footer */
+    /* background: #6cf; */
+}
+
+/* All pages - Top navigation bar */
+.mainNav ul {
+    margin: 0;
+}
+
+.mainNav li {
+    display: inline;
+}
+
+.mainNav a {
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    color: white;
+}
+
+.mainNav {
+    border-bottom: 1px solid  #e4f5e0;
+}
+
+.mainNav li {
+    padding: 0 4%;
+}
+
+.mainNav a:hover {
+    background-color: #e4f5e0;
+}
+
+/* All pages - Main Header area section */
+.mainHeader {
+    background-color: rgba(0, 0, 0, .4);
+    background-image: url("../img/library3.jpg");  /* have a problem to load image, need to check */
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 0.7vw;
+    /* padding-bottom: 20px; */
+    position: fixed; /* Set header to fixed position */
+    top: 0;          /* position at the top of the page */
+    width: 100%;     /* full screen width */
+}
+
+.siteName {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: white;
+    line-height: 1.2em;
+    padding-top: 15px;
+}
+
+.siteNameLarge {
+    font-size: 5vw;
+    /* font-size: 3.5em; */
+    /* padding-top: 30px; */
+}
+
+/* All pages - main footer  */
+.mainFooter {
+    background-color: rgba(48, 11, 11, 0.918);
+    color: white;
+    /* padding: .25em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%; */
+
+}
+
+.mainFooterContainer {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    padding-left: 5%;
+}
+
+.mainFooterContainer ul {
+    flex-grow: 1;
+    text-align: end;
+    list-style: none;
+}
+
+.footerNav li {
+    padding: 0 .5em;
+    display: inline;
+    font-size: 10px;
+}
+
+.footerNav img {
+    width: 30px;
+    height: 30px;
+}
+
+/* for about page (our story) - main content */
+.contentSection {
+    margin: 1em;
+    color: #da3e52;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.sectionHeader {
+    /* font-family: cursive; */
+    font-weight: normal;
+    color: #333333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.quoteImage {
+    float: left;
+    height: 200px;
+    width: 250px;
+    margin: 0px 15px 15px 15px;
+    border-radius: 50%;
+}
+
+/* for Index page - carousel contents */
+
+
+
+article {  
+    margin: 15px;  
+}  
+h1 { 
+    color: green; 
+} 
+.carousel-inner { 
+    /* height: 310px; */
+    background-color: white;
+    padding:50px;
+
+} 
+.carousel .col-3 {
+    padding:0px;
+    
+}
+
+.carousel-section{
+    background-color:white;
+    
+}
+
+.item.active { 
+    height: 310px!important; 
+} 
+  
+.item img { 
+    object-fit: cover; 
+    height: 100%!important; 
+} 
+img{
+    width:80%;
+}
+
+/* buttons style
+
+ 
+/* This styles the arrow buttons */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: #68C3D4;
+    background-color:#568EA3;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #68C3D4;
+}
+/* .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */
+
+/* ul{
+
+}
+
+li{
+
+} */
+
+.image{
+    
+}
+/* 
+}
+
+.col-3-image{
+
+}
+
+.a{
+
+
+}
+
+carousel{
+    
+} */
+
+
+
+
+
+/* This .container will be deleted in the future, to replace with Aishah
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+} */
+
+/* .clearFix {
+    clear: both;
+} 
+
+.quoteDisplay{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+} */
+
+/* Create three equal column for images */
+/* .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.textbox{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+
+
+/* for Submit Quote page - Form */
+/* this class form style can be used for other forms on the web in the future */
+.form{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: rgb(255, 244, 228);
+    /* background: #f4f7f8; */
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    Font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form fieldset{
+    border: none;
+}
+.form legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form textarea,
+.form input[type="text"],
+.form input[type="number"],
+/* .form input[type="date"],
+.form input[type="datetime"],
+.form input[type="email"],
+.form input[type="search"],
+.form input[type="time"],
+.form input[type="url"], */
+.form select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+    /* background: rgba(255,255,255,.1); */
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: rgb(248, 240, 233);
+	/* background-color: #e8eeef; */
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form textarea:focus,
+.form input[type="text"]:focus,
+.form input[type="number"]:focus,
+/* .form input[type="date"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="email"]:focus,
+.form input[type="search"]:focus,
+.form input[type="time"]:focus,
+.form input[type="url"]:focus, */
+.form select:focus{
+    background: rgb(240, 226, 205);
+	/* background: #d2d9dd; */
+}
+.form select{
+	-webkit-appearance: menulist-button;
+	height:45px;
+}
+.form .number {
+    background: peru;
+	/* background: #1abc9c; */
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+/* .form input[type="submit"],
+.form input[type="button"], */
+.formButton 
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+    margin: 0 auto;
+    background: peru;
+	/* background: #1abc9c; */
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+    width: 100%;
+    border: 1px solid rgb(168, 106, 44);
+	/* border: 1px solid #16a085; */
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+/* .form input[type="submit"]:hover,
+.form input[type="button"]:hover, */
+.formButton:hover
+{
+    background: rgb(233, 152, 71);
+    /* background: #109177; */
+}
+
+/* modal popup in submit form page" */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 40;
+    background-color: white;
+    width: 70vw;
+    max-width: 400px;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -45%) scale(1);
+  }
+  
+  .modal-header {
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 0px 15px 15px 15px;
+    align-content: center;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+
+/* for unique items on bookDetail pages */
+#main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+#sidebar {
+    float: right;
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+}
+.container2 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+button {
+    background:papayawhip;
+    border: none;
+	/* color: #FFF; */
+    padding: 15px;
+	font-size: 12px;
+    text-align: center;
+    text-decoration: thinner;
+    display:inline-flexbox;
+    flex-grow: 1;
+    margin-bottom: 3px;
+    /* border: 1px solid rgb(168, 106, 44); */
+	/* border-width: 1px 1px 3px; */
+}
+.coverImage {
+    float: left;
+    margin: 0px 15px 15px 15px;
+    float: left;
+    height: 200px;
+    width: 150px;
+
+}
+
+.bookTable{
+    font-size: 14px;
+}
+
+td {
+    padding: 3px;
+}
+.topic {
+    font-weight: bold;
+}
+.detail {
+    padding-left: 5px;
+}
+
+.filter {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    /* color: white; */
+}
+.filter li {
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    background:papayawhip;
+    border: 1px solid rgb(168, 106, 44);
+    margin-top: 5px;
+}
+
+
+/* We need to also design for mobile device */
+@media (max-width:600px){
+    #main, #sidebar, .column, .container .form{
+        width: 100%;
+        float: none;
+        border: none;
+    }
+    .mainFooterContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        max-width: 90%;
+        /* padding-left: 5%; */
+    }
+    .siteName {
+        font-size: 1.3em;
+        line-height: 1em;
+        padding-top: 10px;
+    }
+    .siteNameLarge {
+        font-size: 1.8em;
+        padding-top: 15px;
+    }
+}

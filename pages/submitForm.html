@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <meta name="description" content="Crowdsourcing quotes">
+    <meta name="keywords" content="quotes,book,movie,film">
+    <meta name="author" content="Aishah Qurashi, Faisa Mohamed, Hannah Haddad, Suwanna Truss">
+    <title>Form - Crowdsourcing quotes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/app.js"></script>
+
+</head>
+<body>
+  <div id="siteContainer">
+    <!-- Header is same on each page -->
+    <div id="siteHeader">
+      <header class="mainHeader">
+        <nav class="nav mainNav">
+          <div class="container">
+            <ul>
+              <li> <a href="../index.html">Home</a></li>
+              <li> <a href="about.html">Our Story</a></li>
+              <li> <a href="submitForm.html">Submit Quote</a></li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="siteName siteNameLarge">Crowdsourcing Quotes From Books</h1>
+      </header>
+    </div>
+  <div id="siteBody">
+      <div class="container">
+        <h2 class="sectionHeader">Submit quote</h2>
+        <div class="form">
+        <!-- <form action="server.php">  this is for the future when we have database backend-->
+          <fieldset>
+            <legend><span class="number">1</span> About your favourite quote</legend>
+            <!-- Suwanna, extension - to find out if we can expand textarea, now, it will have scroll bar. -->
+            <textarea name="quote" placeholder="Quote"></textarea>
+            <input type="text" name="title" placeholder="Book Title">
+            <input type="text" name="author" placeholder="Author">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+            <optgroup label="About">
+              <option value="wisdom">Wisdoms</option>
+              <option value="love">Love</option>
+              <option value="friendship">Friendship</option>
+              <!-- <option value="a">a</option>
+              <option value="b">b</option>
+              <option value="c">c</option>
+              <option value="d">d</option> -->
+            </optgroup>
+            <optgroup label="Feeling">
+              <option value="happy">Happy</option>
+              <option value="sad">Sad</option>
+              <option value="inspiring">Inspiring</option>
+              <!-- <option value="a">a</option>
+              <option value="b">b</option> -->
+              <option value="other_feeling">Other</option>
+              <!-- Suwanna, Extension - to find out if user can input their own word for other -->
+            </optgroup>
+            </select>      
+            </fieldset>
+            <fieldset>
+            <legend><span class="number">2</span> Tell us more about the book</legend>
+            <textarea name="review" placeholder="Reviews/Comments"></textarea>
+            </fieldset>
+            <!-- <input type="submit" value="Submit" /> -->
+            <button data-modal-target="#modal" class= "formButton">Submit</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">Thank you</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <p>Your quote will be posted on our site shortly.</p>
+                  <img src="../img/theend.PNG" alt="sample quote" width="100%">
+                </div>
+            </div>
+            <div id="overlay"></div>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+    <div id="siteFooter">
+      <footer class="mainFooter">
+        <div class="mainFooterContainer">
+          <h5 class="siteName">Crowdsourcing Quotes</h5>
+          <ul class="nav footerNav">
+            <li>Copyright &copy; 2020 CFG WEB DEV <!--(Aishah Qurashi, Faisa Mohamed, Hannah Haddad, Suwanna Truss)-->
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="blank">
+                <img src="" alt="Facebook Logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="blank">
+                <img src="" alt="Twitter Logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

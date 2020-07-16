@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta name="description" content="Crowdsourcing quotes">
+    <meta name="keywords" content="quotes,book,movie,film">
+    <meta name="author" content="Aishah Qurashi, Faisa Mohamed, Hannah Haddad, Suwanna Truss">
+    <title>Home - Crowdsourcing quotes</title>
+    <!-- BootStrap CSS only should be in your index file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery  BootStrap JS should be in your index file  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body>
+  <div id="siteContainer">
+    <!-- Header is same on each page -->
+    <div id="siteHeader">
+      <header class="mainHeader">
+        <nav class="nav mainNav">
+          <div class="container">
+            <ul>
+              <li> <a href="index.html">Home</a></li>
+              <li> <a href="./pages/about.html">Our Story</a></li>
+              <li> <a href="./pages/submitForm.html">Submit Quote</a></li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="siteName siteNameLarge">Crowdsourcing Quotes From Books</h1>
+      </header>
+    </div>
+    <div id="siteBody">          
+    </div>
+    <div id="carouselExampleControls" class="carousel slide " data-interval="false">
+      <div class="carousel-inner">
+          <!--
+        The class .carousel-item works like your #section, but in the bootstrap format. 
+        So the problem you have is that you are hiding the element in each section but not moving the elements to fill       up the previous sections.
+      -->
+          <div class="carousel-item active">
+              <div class="w-100  bg-light">
+                  <!--
+          So basically we want to rebuild this container. Jump over to the Javascript and let's have a look
+           -->
+                  <div class="carousel-section container d-flex flex-row justify-content-center align-items-center">
+
+                      <div class="col-3 images" data-class="wisdom">
+                          <a href="./CrownsourcingQuotes-master v2/pages/bookDetail2.html">
+                          <img src="img/wisdom/lorax.PNG" />
+                          </a>
+
+                      </div>
+                      <div class="col-3 images" data-class="love">
+                          <a href="https://www.goodreads.com/book/show/22628.The_Perks_of_Being_a_Wallflower?ac=1&from_search=true&qid=4YSv215wMN&rank=1">
+                          <img src="img/love/perksofwallflower.PNG" />
+                      </a>
+                      </div>
+                      <div class="col-3 images" data-class="friendship">
+                          <a href="https://www.goodreads.com/book/show/77203.The_Kite_Runner?ac=1&from_search=true&qid=TT7UQ6hx8n&rank=1">
+                          <img src="img/friendship/kiterunner.PNG" />
+                          </a>
+                      </div>
+                      <div class="col-3 images" data-class="wisdom">
+                          <a href =" https://www.goodreads.com/book/show/5344.Hard_Times?ac=1&from_search=true&qid=DD1WKzPMnQ&rank=1">
+                          <img src="img/wisdom/hardtimes.PNG" />
+                       </a>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+  
+  
+          <div class="carousel-item ">
+              <div class="w-100  bg-dark">
+                  <div class="carousel-section container d-flex flex-row justify-content-center align-items-center">
+                      <div class="col-3 images" data-class="love">
+                          <a href="https://www.goodreads.com/book/show/10210.Jane_Eyre?ac=1&from_search=true&qid=8Xd8HRP4D9&rank=1">
+                          <img src="img/love/janeeyre.PNG" />
+                          </a>
+                      </div>
+                      <div class="col-3 images" data-class="wisdom">
+                          <a href ="https://www.goodreads.com/book/show/5.Harry_Potter_and_the_Prisoner_of_Azkaban?ac=1&from_search=true&qid=Ihc7OCyC5Y&rank=1" target="_blank">
+                          <img src="img/wisdom/hp.PNG" />
+                          </a>
+                          
+                                                 
+                      </div>
+                      <div class="col-3 images" data-class="friendship">
+                          <a href="https://www.goodreads.com/book/show/50398.Northanger_Abbey?ac=1&from_search=true&qid=ACbQrua8gA&rank=1">
+                          <img src="img/friendship/northanger.PNG" />
+                          </a>
+                      </div>
+                      <div class="col-3 images" data-class="wisdom">
+                          <a href="https://www.goodreads.com/book/show/15055.Oranges_Are_Not_the_Only_Fruit?ac=1&from_search=true&qid=wQY7cll8fu&rank=1">
+                          <img src="img/oranges.PNG" />
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="w-100  bg-dark">
+                  <div class="carousel-section container d-flex flex-row justify-content-center align-items-center">
+                      <div class="col-3 images" data-class="wisdom">
+                          <a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby?ac=1&from_search=true&qid=8VobBwuopW&rank=1">
+                          <img src="img/wisdom/tgg-younger.PNG" />
+                      </a>
+                      </div>
+                      <div class="col-3 images" data-class="love">
+                          <a href="https://www.goodreads.com/book/show/21787.The_Princess_Bride?from_search=true&from_srp=true&qid=JujXrkHYkR&rank=1">
+                          <img src="img/love/pb-love.PNG" />
+                          </a>
+                      </div>
+                      <div class="col-3 images" data-class="wisdom">
+                          <a href="https://www.goodreads.com/book/show/6319.The_BFG?ac=1&from_search=true&qid=2gStEpHCsC&rank=1">
+                          <img src="img/wisdom/bfg.PNG" />
+                          </a>
+                      </div>
+                      <div class="col-3 images" data-class="wisdom">
+                          <a href="https://www.goodreads.com/book/show/34.The_Fellowship_of_the_Ring?ac=1&from_search=true&qid=64OlgmHdoO&rank=1">
+                          <img src="img/wisdom/fellowship.PNG" />
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="w-100  bg-dark">
+                  <div class="carousel-section container d-flex flex-row justify-content-center align-items-center">
+                      <div class="col-3 images" data-class="friendship">
+                          <a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby?ac=1&from_search=true&qid=8VobBwuopW&rank=1">
+                          <img src="img/friendship/alice.PNG" />
+                      </a>
+                      </div>
+                      <div class="col-3 images" data-class="adventure">
+                          <a href="https://www.goodreads.com/book/show/100915.The_Lion_the_Witch_and_the_Wardrobe?ac=1&from_search=true&qid=VqUjSoZQCg&rank=1">
+                          <img src="img/adventure/alice.PNG" />
+                          </a>
+                      </div>
+                      <div class="col-3 images" data-class="friendship">
+                          <a href="https://www.goodreads.com/book/show/4016515-letter-to-my-daughter?ac=1&from_search=true&qid=nAn1baFVUI&rank=1">
+                          <img src="img/friendship/mayaangelou.PNG" />
+                          </a>
+                      </div>
+                      <div class="col-3 images" data-class="adventure">
+                          <a href="https://www.goodreads.com/book/show/2759537-the-pilgrimage">
+                          <img src="img/adventure/pilgrimage.PNG" />
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+  
+          <!--
+      Below here are the controls for the carousel courtesy of bootstrap
+      -->
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+  <div>
+    <ul class="filter">
+        <li class="all" class="btnFilter">All</li>
+        <li class="love" class="btnFliter">Love</li>
+        <!-- <li class="happiness">Happiness</li> -->
+        <li class="wisdom" class="btnFilter">Wisdom</li>
+        <li class="friendship" class="btnFilter">Friendship</li>
+    </ul>
+</div>
+
+
+
+      
+
+
+
+
+
+
+    <div id="siteFooter">
+        <footer class="mainFooter">
+          <div class="mainFooterContainer">
+            <h5 class="siteName">Crowdsourcing Quotes</h5>
+            <ul class="nav footerNav">
+              <li>Copyright &copy; 2020 CFG WEB DEV (Aishah Qurashi, Faisa Mohamed, Hannah Haddad, Suwanna Truss)
+              </li>
+              <li>
+                <!-- <a href="https://www.facebook.com" target="blank">
+                  <img src="" alt="Facebook Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="blank">
+                  <img src="" alt="Twitter Logo">
+                </a> -->
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+  </div>
+  <link rel="stylesheet" href="css/style.css">
+</body>
+</html>
